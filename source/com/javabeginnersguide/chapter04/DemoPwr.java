@@ -4,16 +4,18 @@ class Pwr {
     double b;
     int e;
     double val;
+
     Pwr(double base, int exp) {
-        b = base;
-        e = exp;
-        val = 1;
+        this.b = base;
+        this.e = exp;
+
+        this.val = 1;
         if(exp==0) return;
-        for( ; exp>0; exp--) val = val * base;
+        for( ; exp>0; exp--) this.val = this.val * base;
     }
 
     double getVal() {
-        return val;
+        return this.val;
     }
 }
 class DemoPwr {
