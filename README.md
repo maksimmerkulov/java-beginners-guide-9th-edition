@@ -80,5 +80,6 @@
 - 📂 Решения в папке: `com.javabeginnersguide.chapter04`
 - 📄 Упражнения из книги:
     - Стр. 136–141 — Основы классов
+    - Стр. 142–145 — Методы
 
 ![Chapter 4](images/chapter-04.png)
