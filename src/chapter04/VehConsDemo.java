@@ -1,21 +1,12 @@
 package chapter04;
 
-class CompFuel {
+class VehConsDemo {
     public static void main(String[] args) {
-        Vehicle minivan = new Vehicle();
-        Vehicle sportscar = new Vehicle();
+        // Создать объекты транспортных средств.
+        Vehicle minivan = new Vehicle(7, 16, 21);
+        Vehicle sportscar = new Vehicle(2, 14, 12);
         double gallons;
         int dist = 252;
-
-        // Присвоить значения полям в minivan.
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 21;
-
-        // Присвоить значения полям в sportscar.
-        sportscar.passengers = 2;
-        sportscar.fuelcap = 14;
-        sportscar.mpg = 12;
 
         gallons = minivan.fuelNeeded(dist);
 
