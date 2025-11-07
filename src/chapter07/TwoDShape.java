@@ -1,11 +1,11 @@
 package chapter07;
 
-// Использование методов доступа для установки и получения закрытых членов
+// Добавление конструктора к Triangle.
 
 // Класс для представления двумерных объектов.
 class TwoDShape {
-    private double width;  // Теперь это
-    private double height; // закрытые члены.
+    private double width; // Теперь это
+    double height;        // закрытые члены.
 
     // Методы доступа для width и height.
     double getWidth() { return width; }

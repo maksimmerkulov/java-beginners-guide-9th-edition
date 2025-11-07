@@ -1,17 +1,9 @@
 package chapter07;
 
-class Shapes2 {
+class Shapes3 {
     public static void main(String[] args) {
-        Triangle t1 = new Triangle();
-        Triangle t2 = new Triangle();
-
-        t1.setWidth(4.0);
-        t1.setHeight(4.0);
-        t1.style = "закрашенный";
-
-        t2.setWidth(8.0);
-        t2.setHeight(12.0);
-        t2.style = "контурный";
+        Triangle t1 = new Triangle("закрашенный", 4.0, 4.0);
+        Triangle t2 = new Triangle("контурный", 8.0, 12.0);
 
         System.out.println("Информация об объекте t1: ");
         t1.showStyle();
