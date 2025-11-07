@@ -4,12 +4,22 @@ package chapter07;
 class Triangle extends TwoDShape {
     private String style;
 
+    // Стандартный конструктор.
+    Triangle() {
+        super();
+        style = "отсутствует";
+    }
+
     // Конструктор.
     Triangle(String s, double w, double h) {
-        setWidth(w);
-        setHeight(h);
-
+        super(w, h); // вызов конструктора суперкласса
         style = s;
+    }
+
+    // Конструктор с одним аргументом.
+    Triangle(double х) {
+        super(х); // вызов конструктора суперкласса
+        style = "закрашенный";
     }
 
     double area() {
