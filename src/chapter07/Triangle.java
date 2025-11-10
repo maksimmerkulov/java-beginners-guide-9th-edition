@@ -1,6 +1,6 @@
 package chapter07;
 
-// Подкласс TwoDShape для представления треугольников.
+// Класс, расширяющий TwoDShape.
 class Triangle extends TwoDShape {
     private String style;
 
@@ -10,7 +10,6 @@ class Triangle extends TwoDShape {
         style = "отсутствует";
     }
 
-    // Конструктор.
     Triangle(String s, double w, double h) {
         super(w, h); // вызов конструктора суперкласса
         style = s;
@@ -21,7 +20,6 @@ class Triangle extends TwoDShape {
         super(х); // вызов конструктора суперкласса
         style = "закрашенный";
     }
-
     double area() {
         return getWidth() * getHeight() / 2;
     }
