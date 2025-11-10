@@ -1,24 +1,25 @@
 package chapter07;
 
-// Многоуровневая иерархия.
 class TwoDShape {
     private double width;
     private double height;
-
     // Стандартный конструктор.
     TwoDShape() {
         width = height = 0.0;
     }
-
     // Параметризованный конструктор.
     TwoDShape(double w, double h) {
         width = w;
         height = h;
     }
-
     // Конструктор объекта с одинаковыми шириной и высотой.
     TwoDShape(double х) {
         width = height = х;
+    }
+    // Конструктор объекта из объекта.
+    TwoDShape(TwoDShape ob) {
+        width = ob.width;
+        height = ob.height;
     }
     // Методы доступа для width и height.
     double getWidth() { return width; }
