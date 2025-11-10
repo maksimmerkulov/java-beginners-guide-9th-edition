@@ -1,8 +1,7 @@
 package chapter07;
 
-class UseSuper {
+class OrderOfConstruction {
     public static void main(String[] args) {
-        B subOb = new B(1, 2);
-        subOb.show();
+        C c = new C();
     }
 }
