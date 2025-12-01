@@ -7,3 +7,13 @@
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 
 ![Cover](images/cover.png)
+
+---
+
+## 📘 Глава 1. Основы языка Java
+
+- 📂 Решения в папке: `com.javabeginnersguide.chapter01`
+- 📄 Упражнения из книги:
+    - Стр. 43–48 — Первая простая программа
+
+![Chapter 1](images/chapter-01.png)
