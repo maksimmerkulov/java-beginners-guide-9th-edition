@@ -6,10 +6,9 @@ package com.javabeginnersguide.chapter01;
 */
 class Example2 {
     public static void main(String[] args) {
-        int myVar1;     // объявление переменной
-        int myVar2;     // объявление еще одной переменной
+        int myVar1, myVar2; // объявление обеих переменных в одном операторе
 
-        myVar1 = 1024;  // присваивание переменной myVar1 значения 1024
+        myVar1 = 1024;      // присваивание переменной myVar1 значения 1024
 
         System.out.println("myVar1 содержит " + myVar1);
 
