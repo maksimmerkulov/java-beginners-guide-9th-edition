@@ -18,8 +18,6 @@ class RetMeth {
         Vehicle minivan = new Vehicle();
         Vehicle sportscar = new Vehicle();
 
-        int range1, range2;
-
         // Присвоить значения полям в minivan.
         minivan.passengers = 7;
         minivan.fuelcap = 16;
@@ -30,15 +28,13 @@ class RetMeth {
         sportscar.fuelcap = 14;
         sportscar.mpg = 12;
 
-        // Получить дальность поездки для разных транспортных средств.
-        range1 = minivan.range();
-        range2 = sportscar.range();
-
+        // Получить дальность поездки для minivan в операторе println().
         System.out.println("Минивэн может перевезти " + minivan.passengers +
-                " пассажиров на расстояние " + range1 + " миль.");
+                " пассажиров на расстояние " + minivan.range() + " миль.");
 
+        // Получить дальность поездки для sportscar в операторе println().
         System.out.println("Спортивный автомобиль может перевезти " +
                 sportscar.passengers +
-                " пассажиров на расстояние " + range2 + " миль.");
+                " пассажиров на расстояние " + sportscar.range() + " миль.");
     }
 }
