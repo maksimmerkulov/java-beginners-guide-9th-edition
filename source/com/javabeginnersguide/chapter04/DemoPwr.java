@@ -5,13 +5,14 @@ class Pwr {
     int e;
     double val;
 
-    Pwr(double base, int exp) {
-        this.b = base;
-        this.e = exp;
+    Pwr(double b, int e) {
+        this.b = b;
 
-        this.val = 1;
-        if(exp==0) return;
-        for( ; exp>0; exp--) this.val = this.val * base;
+        this.e = e;
+
+        val = 1;
+        if(e==0) return;
+        for( ; e>0; e--) val = val * b;
     }
 
     double getVal() {
