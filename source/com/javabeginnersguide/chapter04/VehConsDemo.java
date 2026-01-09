@@ -1,42 +1,37 @@
 package com.javabeginnersguide.chapter04;
 
-/*
-  Добавление параметризованного метода, который вычисляет объем топлива,
-  необходимого для поездки на заданное расстояние.
-*/
+// Добавление конструктора.
 
 class Vehicle {
     int passengers; // количество пассажиров
     int fuelcap;    // запас топлива в галлонах
     int mpg;        // расход топлива в милях на галлон
 
+    // Конструктор для класса Vehicle.
+    Vehicle(int p, int f, int m) {
+        passengers = p;
+        fuelcap = f;
+        mpg = m;
+    }
+
     // Возвращает дальность поездки.
     int range() {
         return mpg * fuelcap;
     }
 
-    //Рассчитывает объем топлива,необходимого для поездки на заданное расстояние
+    //Рассчитывает объем топлива, необходимого для поездки на заданное расстояние
     double fuelNeeded(int miles) {
         return (double) miles / mpg;
     }
 }
 
-class CompFuel {
+class VehConsDemo {
     public static void main(String[] args) {
-        Vehicle minivan = new Vehicle();
-        Vehicle sportscar = new Vehicle();
+        // Создать объекты транспортных средств.
+        Vehicle minivan = new Vehicle(7, 16, 21);
+        Vehicle sportscar = new Vehicle(2, 14, 12);
         double gallons;
         int dist = 252;
-
-        // Присвоить значения полям в minivan.
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 21;
-
-        // Присвоить значения полям в sportscar.
-        sportscar.passengers = 2;
-        sportscar.fuelcap = 14;
-        sportscar.mpg = 12;
 
         gallons = minivan.fuelNeeded(dist);
 
