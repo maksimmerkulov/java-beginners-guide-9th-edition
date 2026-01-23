@@ -11,7 +11,9 @@ class ShowBits { int numbits;
         numbits = n;
     }
     void show(long val) {
-        long mask = 1;
+        var mask = 1L;  // Обратите внимание, что начальное значение
+                        // явно указано как long, так что тип mask
+                        // выводится как long.
 
         // Сдвиг влево значения 1 в нужную позицию.
         mask <<= numbits-1;
