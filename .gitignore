@@ -1,0 +1,26 @@
+# IDE Settings (IntelliJ, Eclipse, NetBeans, VS Code)
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.vscode/
+nbproject/
+build/
+
+# Compilation outputs
+out/
+bin/
+classes/
+target/
+
+# Java artifacts
+*.class
+*.jar
+*.war
+
+# OS files
+.DS_Store
+Thumbs.db
